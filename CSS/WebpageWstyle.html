@@ -1,0 +1,47 @@
+<html>
+		<title>Page with style</title>
+	<head>
+		<style type="text/css">
+			.red {
+				color: #ff0043;
+			}
+			#green {
+				color: #00ff01;
+			}
+			.underlined {
+				text-decoration-line: overline;
+			}
+			#first-section {
+				color: aqua;
+				background-color: #ff10eb;
+				width: 200px;
+				position: relative;
+				position: relative;
+				left: 100px;
+				top: 100px;
+				z-index: 1;
+			}
+			#second-section {
+				background-color: gold;
+				width: 200px;
+				position: relative;
+				left:100px;
+				top: 50px;
+				z-index: 2;
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="first-section">
+	<p >This is the best Website in the world.<p/>
+	<p >This is about style.<p/>
+		</div>
+		<div id="second-section">
+	<p id="green">This is some more text.<span class="underlined"> This text is underline.</span></p>
+	<h1 class="red">CSS is Cool!</h1>
+		</div>
+		<p>This paragraph is not floated, al-right?</p>
+		</div>
+	</body>
+</html>
