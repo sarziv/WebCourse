@@ -1,0 +1,160 @@
+<style type="text/css">
+.topbarfont {
+    font-family: 'Montserrat', sans-serif;
+}
+.redbarfont {
+    font-family: 'Roboto', sans-serif;
+}
+.endfont {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 150%;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.topbar {
+    width: 1214px;
+    margin:0 auto;
+    height: 40px;
+}
+#bbclogo {
+    margin: 8px 8px 0px 20px;
+    width: 80px;
+    height: 65%;
+    float: left;
+}
+.topbar-selection {
+    border-right: 1px grey solid;
+    height: 40px;
+    float: left;
+}
+.bbclogo {
+    float: left;
+    margin: 8px 4px 0px 4px;
+}
+.boldtext {
+    float: left;
+    font-weight: bold;
+    font-size: 90%;
+    margin: 10px 13px 0px 13px;
+}
+.boldtextmore {
+    float: left;
+    font-size: 90%;
+    margin: 10px 13px 0px 13px;
+}
+.morearrow {
+    float: left;
+    margin: 15px 5px 0px 15px;
+}
+.searchbar {
+    float: right;
+    margin: 10px 0px 0px 16px;
+    background-color: #e4e4e4;
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 5px;
+}
+.searchicon {
+    float: right;
+    margin: 10px 0px 0px 0px;
+    height: 21px;
+}
+.rednewsbar {
+    background-color: #bb1919;
+    width:1200px;
+    margin:0 auto;
+    font-size: 260%;
+    color:white;
+    height: 50px;
+    padding-left: 16px;
+}
+.redtoolbar {
+    background-color: #a91717;
+    width:1210px;
+    margin:0 auto;
+    height: 46px;
+    padding-left: 6px;
+}
+.redtopbar {
+    border-right: 1px wheat solid;
+    height: 25px;
+    float: left;
+    margin: 12px 0px 10px 0px;
+}
+.textwhite {
+    color: white;
+    font-size: 130%;
+}
+.redmorearrow {
+    float: left;
+    margin: 16px 0px 10px 0px;
+}
+.techwhitebar {
+    float: left;
+    font-size: 150%;
+    margin-left: 10px;
+    padding: 14px 0px 0px 0px;
+    border-bottom: 3px red solid;
+
+}
+.newstitle {
+    float: left;
+    font-weight: bold;
+    font-size: 200%;
+    width: 1200px;
+    margin:0 auto;
+    height: 40px;
+    padding: 15px 0px 8px 10px;
+    border-bottom: 3px red solid;
+}
+.clearfix {
+    clear: both;
+}
+.positionright {
+    font-size:50%;
+    float: right;
+    padding: 15px 250px 8px 150px;
+    border-left: 2px red solid;
+}
+.sectoolbar1 {
+    float: left;
+    width:200px;
+    height: 300px;
+    padding-top: 6px;
+    padding-left: 8px;
+    padding-right: 16px;
+}
+.sectoolbar2 {
+    float: left;
+    width:400px;
+    color:white;
+    height: 225px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.watchpart {
+    float: left;
+    padding: 0px 0px 0px 20px;
+    width: 450px;
+    height: 100px;
+}
+.watchpart2 {
+
+    float: right;
+    padding: 0px 0px 0px 0px;
+    width: 300px;
+    padding-top: 8px;
+    height: 100px;
+}
+.watchimage {
+    float: left;
+
+    padding: 10px 10px 25px 10px;
+}
+
+</style>
