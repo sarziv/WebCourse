@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Variables</title>
+    </head>
+
+    <body>
+
+    <p><input id="inputText" type="text"></p>
+    <p><button id="button">Click me to change text!</button></p>
+    <p id="emptyspot">Enter</p>
+    <script type="text/javascript">
+        document.getElementById("button").onclick = function () {
+         document.getElementById("inputText").style.color = "red";
+        }
+        document.getElementById("button").onclick =function () {
+            var textChanger = "";
+            textChanger = document.getElementById("inputText").value;
+            document.getElementById("emptyspot").innerHTML = textChanger;
+        }
+    </script>
+    </body>
+</html>
