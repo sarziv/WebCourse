@@ -1,0 +1,52 @@
+<html>
+<title>Guess PC</title>
+<head>
+</head>
+
+<body>
+<p>How many finger I am holding?</p>
+<p>
+    <select id="input">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+</p>
+<p><button id="button">Guess?</button></p>
+<script type="text/javascript">
+
+
+    function doGuess(corretAnswer) {
+        var randomfingers = Math.floor(Math.random() * 5) + 0;
+        if (randomfingers == corretAnswer) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    document.getElementById("button").onclick = function () {
+        var gotIt = false;
+        var numberofGuess = 1;
+        var myfingers = document.getElementById("input").value;
+
+        while (gotIt == false) {
+
+            if (doGuess(myfingers) == true) {
+                alert("You did it! It was " + myfingers + " Number of guess: " + numberofGuess);
+                gotIt = true;
+                return 0;
+            }
+            else {
+                numberofGuess++;
+            }
+
+            }
+
+    }
+</script>
+</body>
+</html>

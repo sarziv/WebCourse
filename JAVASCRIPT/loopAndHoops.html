@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops like for ever</title>
+</head>
+<body>
+<p id="text1">This is loops</p>
+    <div id="both"></div>
+    <script type="text/javascript">
+        var myString = "";
+        var myArray = ["Hello", "World","MyMAN"];
+        for (var i = 0; i < myArray.length; i++){
+            myString = myString + "<p>" + myArray[i] + "</p>";
+        }
+        document.getElementById("both").innerHTML = myString;
+    </script>
+
+</body>
+</html>

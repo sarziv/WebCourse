@@ -4,13 +4,23 @@
 </head>
 
 <body>
-    <script type="text/javascript">
-    var myArray = new Array();
-    myArray[0]="pizza";
-    myArray[1]="Cake";
+<p>If higher then 5 LUCKY</p>
+<p><input id="textinput" type="text"></p>
+<button id="button">Click</button>
+<p id="empty"></p>
 
-    console.log(myArray);
-    
+    <script type="text/javascript">
+
+        document.getElementById("button").onclick = function () {
+            var magnetometer = document.getElementById("textinput").value;
+            if (magnetometer > 5 ) {
+                document.getElementById("empty").innerHTML = "Yes you lucky";
+            }
+            else {
+                document.getElementById("empty").innerHTML = "Aww you not lucky";
+            }
+        }
+
     </script>
 
 

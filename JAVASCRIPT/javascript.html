@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+<p id="helloworld">Hello World</p>
+
+<button id="changetext">Changed text!</button>
+<p id="secondtext">Javascript is.....</p>
+<button id="changetext2">What other button?!</button>
+<p id="thirdtext"></p>
+<button id="changetext3">What other button?!</button>
+<p id="fourtext">This is FONT</p>
+<button id="changetext4">Get DELETED</button>
+    <script type="text/javascript">
+        //Change by Id
+        document.getElementById("changetext").onclick = function () {
+            //alert("You clicked Buttom");
+            document.getElementById("helloworld").innerHTML = "What have you done?";
+        }
+        document.getElementById("changetext2").onclick = function () {
+            document.getElementById("secondtext").innerHTML = "I think " + document.getElementById("secondtext").innerHTML + "awesome";
+        }
+        document.getElementById("changetext3").onclick = function () {
+            //alert("You clicked Buttom");
+            document.getElementById("thirdtext").innerHTML = "And now i'm HERE!";
+        }
+        document.getElementById("changetext4").onclick = function () {
+                //alert("You clicked Buttom");
+                //document.getElementById("fourtext").style.color = "red";
+                //document.getElementById("fourtext").style.fontSize = "50px";
+                document.getElementById("fourtext").style.display = "none";
+            }
+    </script>
+</body>
+</html>
