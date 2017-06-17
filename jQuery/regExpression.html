@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        body {
+            font-family: helvetica, sans-serif;
+            font-size: 30px;
+        }
+        input {
+            height: 40px;
+            padding: 5px;
+            font-size: 30px;
+            border-radius: 5px;
+            border: 1px grey solid;
+            width: 320px;
+
+        }
+        label {
+            padding-top: 5px;
+            padding-right: 10px;
+            width: 250px;
+            float: left;
+            position: relative;
+            top: 4px;
+        }
+        #wrap {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .form-element {
+            margin-bottom: 20px;
+        }
+        .submitfont {
+            font-size: 80%;
+            margin-left: 260px;
+            background-color: grey;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <title>Regular Expression</title>
+</head>
+    <body>
+    <div id="wrap">
+    <div class="form-element">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" placeholder="eg. youremail@gmail.com">
+    </div>
+        <div class="form-element">
+        <label for="phone">Phone</label>
+        <input type="text" name="Phone" id="phone" placeholder="867020656">
+            </div>
+        <div class="form-element">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" >
+        </div>
+        <div class="form-element">
+            <label for="conpassword">Confirm Password</label>
+            <input type="text" name="conpassword" id="conpassword" >
+        </div>
+        <input class="submitfont" type="submit" id="submitbutton" value="Sign Up!"></input>
+
+        <script type="text/javascript">
+
+            function isValidEmailAddress(emailAddress) {
+                var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+                // alert( pattern.test(emailAddress) );
+                return pattern.test(emailAddress);
+            };
+
+            $("#submitbutton").click( function () {
+                var errorMessage = "";
+                if(isValidEmailAddress($("#email").val()) == false) {
+                    alert("Bad Email");
+                errorMessage += "<p>Youe email address is not valid.</p>";
+             }
+                if ($.isNumeric($("#phone").val()) == false) {
+                    alert("Bad Number");
+                    errorMessage += "<p>Your phone number is not numeric</p>"
+
+                }
+
+             if ($("#password").val() != $("#conpassword").val()) {
+                 alert("Password do not match");
+                 errorMessage += "<p>Your password entered wrong.</p>";
+             }
+            });
+
+        </script>
+    </div>
+    </body>
+</html>

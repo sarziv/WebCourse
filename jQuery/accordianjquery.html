@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <meta charset="UTF-8">
+    <title>Accordian jQuery</title>
+</head>
+<body>
+<div id="accordion">
+    <h3>Section 1</h3>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur nisi id nibh tempus placerat. Nunc in scelerisque quam. Integer pulvinar malesuada condimentum. Fusce pellentesque, sem at scelerisque rhoncus, nunc nulla aliquet lectus, quis eleifend eros ligula sit amet sapien. Suspendisse neque risus, dapibus id metus in, pulvinar finibus velit. Proin vulputate venenatis dolor porta mollis. In hac habitasse platea dictumst. Integer suscipit accumsan pharetra. Phasellus fermentum, lorem ac eleifend vehicula, ligula sem faucibus enim, et tempus felis augue sit amet mauris. Quisque varius, est a porta pulvinar, turpis mi blandit erat, sagittis vehicula dui sapien non felis. In condimentum et risus et efficitur. Sed eleifend, dolor a vehicula pellentesque, leo est semper massa, egestas ornare justo sapien ut eros. Pellentesque egestas egestas elementum. Nullam sagittis nibh ut tellus mattis tempor. Phasellus ac ante in diam congue gravida eu non tortor.
+        </p>
+    </div>
+    <h3>Section 2</h3>
+    <div>
+        <p>
+            Nulla sit amet pellentesque urna, id aliquet elit. Mauris aliquam arcu quam, non fermentum felis luctus id. Quisque tempor dui id arcu mollis, et finibus mauris porttitor. Nam id mauris sit amet orci dictum auctor. Donec sit amet sollicitudin leo. Suspendisse blandit metus massa, at facilisis enim gravida tempor. Maecenas nisl metus, posuere eu tellus vel, convallis dignissim velit. Pellentesque viverra sapien non purus hendrerit, mollis feugiat nunc congue. Fusce fermentum eros at ultrices congue. Phasellus tristique turpis vel rhoncus porttitor. Suspendisse euismod orci eros, a ultrices est accumsan at. Pellentesque ullamcorper vel ex in laoreet. Etiam viverra vitae enim porta blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quis libero in mi venenatis dictum. Maecenas feugiat lacus ante, eu venenatis leo vestibulum faucibus.
+        </p>
+    </div>
+    <h3>Section 3</h3>
+    <div>
+        <p>
+            Vivamus commodo, tellus vel lacinia dictum, tortor augue interdum neque, at posuere urna elit vel ante. Praesent maximus mollis felis ut dignissim. In mollis lacinia sem, vitae fermentum mauris euismod a. Aenean sed efficitur quam. Fusce a erat ligula. Donec a fermentum erat, vel ultrices nulla. Cras sed mi elit. Ut non justo et lacus tincidunt sollicitudin. Mauris et justo luctus, sodales mi vitae, luctus arcu. Duis semper lectus libero, et faucibus mauris ullamcorper ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin facilisis eros ac nunc fermentum placerat. Suspendisse potenti. Nullam vitae enim sed mi condimentum vestibulum id id velit. Praesent in hendrerit ex. Nunc condimentum, ligula non convallis tempor, nibh dolor tempus sapien, non maximus purus leo at velit.
+        </p>
+        <ul>
+            <ul id="sortable">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </ul>
+    </div>
+    <h3>Section 4</h3>
+    <div>
+        <p>
+            Vestibulum suscipit ligula eget ipsum elementum, eget euismod leo aliquam. In eros nunc, rhoncus vitae sapien vitae, tincidunt scelerisque dui. Phasellus sollicitudin fermentum tincidunt. Duis nec varius augue. Nunc congue luctus sapien dignissim aliquet. Pellentesque est mauris, condimentum eget odio eget, mattis posuere lorem. Etiam condimentum ipsum elit, at lacinia risus dignissim non. Vestibulum felis purus, auctor non tempus quis, auctor eget arcu.
+        </p>
+        <p>
+            Mauris vestibulum molestie ligula. Aliquam tincidunt dictum tempus. Nulla sit amet quam diam. Donec non metus ut augue scelerisque vulputate. Vestibulum rhoncus efficitur libero, non elementum nisl pulvinar sit amet. Praesent sit amet urna ut nibh placerat hendrerit. Sed ultricies congue est. Suspendisse nunc urna, bibendum non eleifend et, condimentum vitae purus. Quisque in lectus eu sapien euismod faucibus. In lobortis eu ipsum id cursus. Mauris vel tortor at felis egestas facilisis.
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+
+        $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+        } );
+
+    </script>
+
+</body>
+</html>

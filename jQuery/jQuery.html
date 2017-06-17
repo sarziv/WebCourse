@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+
+        div {
+            margin: 20px 20px 20px 20px;
+        }
+
+        #red {
+            background-color: #ff0800;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<body>
+
+    <div id="red"></div>
+
+    <script type="text/javascript">
+
+
+
+        $("#red").click(function () {
+            $(this).animate({
+                width:"400px",
+                height:"400px",
+            }, 2000, function () {
+            $(this).css("background-color" , "yellow");
+            });
+
+        })
+
+
+    </script>
+</body>
+</html>
