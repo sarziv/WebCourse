@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
 <head>
     <style type="text/css">
-        
+        .topFont {
+            font-family: 'Frijole', cursive;
+            font-weight: bold;
+            font-size: 150%;
+            padding:20px 400px 0px 20px;
+}
+        #topBar {
+            width: 1200px;
+            margin: 0 auto;
+            height: 80px;
+            background-color: grey;
+
+        }
+        .buttonFont {
+            font-size: 100%;
+            float: right;
+            border: 1px black solid;
+
+        }
+        .borderLeftRaduis {
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+        }
+        .borderRightRadius {
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .borderMidNoneCss {
+            border-left: none;
+            border-right: none;
+        }
+        .borderRightNone {
+            border-right: none;
+        }
+
     </style>
     <meta charset="UTF-8">
     <title>JS Bin Copy</title>
 </head>
 <body>
-    <script type="text/javascript">
+    <div id="topBar">
+        <p  class="topFont">Code Player
+
+            <button class="buttonFont borderRightRadius" id="htmlbutton">Output</button>
+            <button class="buttonFont borderRightNone" id="htmlbutton">Javascript</button>
+            <button class="buttonFont borderMidNoneCss" id="htmlbutton">CSS</button>
+            <button class="buttonFont borderLeftRaduis" id="htmlbutton">HTML</button>
+        </p>
+    </div>
+    <div>
+
+    </div>
+
+
+<script type="text/javascript">
 
     </script>
 </body>
